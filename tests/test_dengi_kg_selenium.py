@@ -20,7 +20,9 @@ def test_selenium(driver):
     submit_a_request.click()
     search_box = driver.find_element(By.NAME, 'name')
     search_box.send_keys('Alexandr')
-
-
+    search_box = driver.find_element(By.NAME, 'company')
+    search_box.send_keys('Aston')
+    search_box = driver.find_element(By.NAME, 'phone')
+    search_box.send_keys('78879978787')
 
     search_box.send_keys(Keys.ENTER)
